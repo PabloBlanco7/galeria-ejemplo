@@ -1,41 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0.1em;
+  padding: 0.1em;
   box-sizing: border-box;
 }
 body{
-  font-family: "Montserrat", sans-serif;
+  /*font-family: "Montserrat", sans-serif;*/
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;/*es la propiedad que establece el tamaño de la letra de un elemento de texto*/
+  font-style: italic;/*es una propiedad que se utiliza para definir el aspecto de una fuente de texto*/
+  font-weight: bold;/*es una propiedad que define el grosor de la fuente o el nivel de negrita de los caracteres de un texto*/
 }
 .contenedor{
   max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 1px auto;
+  padding: 5rem;
+  margin-top: 5em;
+  background: url(characters/night-sky-9059825_1280.jpg);
+  background-position: center;
+  background-size: 50px;
+  background-attachment: fixed;
 }
 .card{
-  width: 320px;
+  width: 22vw;/* 90% del ancho de la pantalla */
   background-color: #f2f2f2;
   padding: 10px;
   margin: 10px;
   border-radius: 8px;
   border: solid 0.5px #cbc3c3;
   display: inline-block;
+  height: 70vh;/* 80% de la altura de la pantalla */
 }
 .card img{
   display: block;
+  max-width: 500px;
+  height: auto;
   max-height: 280px;
   margin: 16px auto;
   filter: drop-shadow(2px 0px 8px #515151);
+  object-fit: fill;
 }
 .card h2{
   margin-top: 2px;
   margin-bottom: 8px;
-  color: #373737;
+  color: #11d611;
   text-align: center;
+  text-transform: uppercase; /*cambia mayusculas y minusculas*/
+  letter-spacing: 5px; /*sirve para controlar el espacio en blanco que existe entre caracteres de un texto*/
+  text-shadow: 2px 2px 4px #888, 1px 1px 1px blue; /*sirve para agregar efectos de sombra al texto*/
 }
 .card p{
   font-size: 16px;
   color: #515151;
   text-align: center;
+  
 }
+
+.puntoc2-1{
+  background: rgb(20, 25, 30);
+}
+.puntoc2-2{
+  background: rgb(150, 200, 200);
+}
+.puntoc2-3{
+  background: rgb(250, 50, 50);
+}
+.puntoc2-4{
+  background: rgb(210, 80, 120);
+}
+.puntoc2-5{
+  background: rgb(10, 240, 90);
+}
+
+.puntoc3-1{
+  background: rgba(10, 120, 240, 0.5);
+}
+
+.punto4{
+ background-image: radial-gradient(circle, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
